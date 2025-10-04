@@ -13,7 +13,7 @@
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    height: 530px;
+    height: 560px;
     width: auto;
     color: white;
     border: 1px solid #238cc9;
@@ -67,9 +67,25 @@
     transition: 0.15s;
 }
 
+.banner-content > button:active {
+    background-color: #1a597e;
+    color: rgb(196, 193, 193);
+    border: none;
+    transition: 0.15s;
+}
+
 .logo {
-    border-radius: 50%;
-    filter: drop-shadow(-5px 10px 1px rgba(9, 18, 26, 0.541));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 260px;      /* tamanho do círculo */
+    height: 260px;
+    margin: 0 auto;    /* centraliza dentro do header */
+
+    background-color: #11111142;     /* cor de fundo do círculo */
+    border-radius: 50%;         /* deixa redondo */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7); /* sombra difusa */
 }
 
 main {
@@ -102,6 +118,7 @@ main {
     font-size: 15px;
 }
 
+
 .module {
     border: 1px solid #238cc9;
     border-radius: 30px;
@@ -110,8 +127,10 @@ main {
     width: 500px;
     background-color: #2d2e2e;
     text-align: center;
+    box-shadow: inset 1px 5px 10px rgba(0, 0, 0, 0.541);
 }
 
 .module > span {
     color: #238cc9;
 }
+
